@@ -1,0 +1,28 @@
+[package]
+name = "perfume-shop-api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.8.6"
+tokio = { version = "1.48.0", features = ["full"] }
+tower = "0.6"
+tower-http = { version = "0.7", features = ["cors", "trace"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sqlx = { version = "0.8", features = ["runtime-tokio-rustls", "postgres", "chrono", "uuid"] }
+mongodb = "3.2"
+redis = { version = "0.27", features = ["tokio-comp"] }
+jsonwebtoken = "9.3"
+argon2 = "0.6"
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.11", features = ["v4", "serde"] }
+anyhow = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+dotenv = "0.16"
+config = "0.14"
+validator = { version = "0.19", features = ["derive"] }
+stripe-rs = "0.29"
+rust_decimal = "1.38"

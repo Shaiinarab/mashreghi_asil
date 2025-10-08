@@ -1,0 +1,24 @@
+{
+  "name": "perfume-shop-api",
+  "version": "0.1.0",
+  "description": "Rust Axum backend API for perfume shop",
+  "private": true,
+  "scripts": {
+    "dev": "cargo run",
+    "build": "cargo build --release",
+    "lint": "cargo clippy",
+    "test": "cargo test",
+    "check": "cargo check",
+    "clean": "cargo clean",
+    "migrate": "sqlx migrate run"
+  },
+  "keywords": [
+    "rust",
+    "axum",
+    "api",
+    "perfume",
+    "e-commerce"
+  ],
+  "author": "Perfume Shop Team",
+  "license": "MIT"
+}

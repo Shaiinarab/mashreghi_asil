@@ -1,0 +1,24 @@
+{
+  "name": "perfume-shop-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/api",
+    "packages/*",
+    "workers/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "wasm:build": "cd packages/wasm-scent && wasm-pack build --target web --out-dir pkg",
+    "wasm:dev": "cd packages/wasm-scent && wasm-pack build --target web --out-dir pkg --dev",
+    "wasm:test": "cd packages/wasm-scent && wasm-pack test --headless --firefox",
+    "wasm:clean": "cd packages/wasm-scent && rm -rf pkg target"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0"
+  }
+}

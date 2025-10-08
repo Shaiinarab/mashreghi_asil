@@ -1,0 +1,31 @@
+{
+  "name": "wasm-scent",
+  "version": "0.1.0",
+  "description": "WebAssembly scent analysis module for perfume similarity",
+  "main": "pkg/wasm_scent.js",
+  "types": "pkg/wasm_scent.d.ts",
+  "files": [
+    "pkg/**/*"
+  ],
+  "scripts": {
+    "build": "wasm-pack build --target web --out-dir pkg",
+    "build:node": "wasm-pack build --target nodejs --out-dir pkg",
+    "build:bundler": "wasm-pack build --target bundler --out-dir pkg",
+    "dev": "wasm-pack build --target web --out-dir pkg --dev",
+    "test": "wasm-pack test --headless --firefox",
+    "clean": "rm -rf pkg target"
+  },
+  "keywords": [
+    "wasm",
+    "webassembly",
+    "perfume",
+    "scent",
+    "fragrance",
+    "similarity"
+  ],
+  "author": "Perfume Shop Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@wasm-tool/wasm-pack-plugin": "^1.8.0"
+  }
+}
